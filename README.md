@@ -1,6 +1,5 @@
 # BinanceTradingTerminal
-
-https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+![Trading] (https://imgur.com/calYyow)
 
 Functionality:
 1. Place limit and market orders
