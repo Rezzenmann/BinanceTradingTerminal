@@ -43,7 +43,7 @@ class MakeOrder:
 		if self.type == 1:
 
 			print("You chosed: Trading Pair {}, Order Type LIMIT, Side {}, Quantity {}".format(self.symbol, self.side, self.quantity))
-			price = float(input("Price >>>"))
+			price = float(input("Price\n>>>"))
 			try:
 				limit = bot.createOrder(
 				symbol=self.symbol,
@@ -81,7 +81,7 @@ class GetOrdersInfo:
 	#Инфа по всем текущим ордерам.
 
 	def info(self):
-		print('----------OPENED POSITIONS----------')
+		print('\n----------OPENED POSITIONS----------\n')
 		a = bot.openOrders()
 		if len(a) == 0:
 			print("\nCheking......\nYou don`t have open orders.\n")
@@ -97,24 +97,24 @@ class DeletingOrder(GetOrdersInfo):
 
 	def __init__(self, symbol):
 		super().info()
-	try:
-		def deleting(self,symbol, orderId):
-			print()
-			bot.cancelOrder(
-			orderId=orderId,
-			symbol= symbol)
-	except:
-		print("\nError Ocurred")
-	finally:
-		print("\nYou have succesfully deleted this order!")
+		try:
+			def deleting(self,symbol, orderId):
+				print()
+				bot.cancelOrder(
+				orderId=orderId,
+				symbol= symbol)
+		except:
+			print("\nError Ocurred")
+		else:
+			print("\nYou have succesfully deleted this order!")
 				
 
 def main():
 
-	print("----------BINANCE TRADING TERMINAL BY RMANN------------\n\n")
-	print("What do you want to do:\n 1. Get my balance \n 2. Place an order \n 3. Get info about placed orders \n 4. Delete order \n 5. Exit")
+	print("\n\n----------BINANCE TRADING TERMINAL BY RMANN------------\n\n")
+	print("What do you want to do:\n 1. Get my balance \n 2. Place an order \n 3. Get info about placed orders \n 4. Delete order \n 5. Exit\n")
 	try:
-		user_answer = int(input("Write the number of the option >>> "))
+		user_answer = int(input("\nWrite the number of the option >>> "))
 
 		if user_answer == 1:
 
