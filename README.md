@@ -1,5 +1,5 @@
 # BinanceTradingTerminal
-![Trading] (https://imgur.com/calYyow)
+<img src="/BinanceTerminal/trade.jpeg" alt="Logo"/>
 
 Functionality:
 1. Place limit and market orders
